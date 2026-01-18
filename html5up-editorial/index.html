@@ -40,7 +40,7 @@
 										<p>
 										Passionnée par l’ingénierie, guidée par une curiosité technique et une volonté
 										constante d’innover,je suis actuellement à la recherche d’un stage d’une durée
-de 4  à 6 mois, je cherche à intégrer une équipe qui me permettra d'affiner
+de 4 à 6 mois. Je souhaite intégrer une équipe qui me permettra d'affiner
 										mon expertise et de développer des solutions technologiques évoluées dans un
 										environnement dynamique.
 										<br /><br />
@@ -52,7 +52,7 @@ de 4  à 6 mois, je cherche à intégrer une équipe qui me permettra d'affiner
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="images/pic.jpg" alt="" />
+										<img src="images/image1.jpg" alt="" />
 									</span>
 								</section>
 
@@ -115,12 +115,79 @@ de 4  à 6 mois, je cherche à intégrer une équipe qui me permettra d'affiner
 									<div class="posts">
 										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Asservissement sous MATLAB/Simulink</h3>
+											<h3>Asservissement et régulation sous MATLAB/Simulink</h3>
+													<section class="schema-cuve">
+	<section class="schema-cuve">
+	<section class="schema-cuve">
+		<p style="margin:0 0 0.6em 0;"><strong>Régulation du niveau d’eau d’une cuve</strong></p><br>
+	<div class="schema-container">
+
+		<div class="cuve-reelle">
+			<img src="images/Réservoir industriel en acier inoxydable.png" alt="Cuve industrielle réelle">
+		</div>
+
+		<div class="cuve-schema">
+			<img src="images/cuve.jpg" alt="Schéma de principe de la cuve">
+		</div>
+
+		<div class="simulink">
+			<img src="images/schema.jpg" alt="Schéma de régulation Simulink">
+		</div>
+
+	</div>
+</section>
+
+</section>
+
+
+											
 											<p>
-											Régulation de la vitesse d’un moteur et du niveau d’eau
-											d’une cuve à l’aide de lois de commande.
+												Dans ce travail, j’ai suivi une démarche structurée en automatique :
+												<strong>modélisation du procédé</strong> à partir des lois physiques,
+												<strong>validation du comportement sous Simulink</strong> en boucle ouverte,
+												puis <strong>mise en place d’une loi de commande proportionnelle</strong>.
+												Le réglage a été effectué à partir d’un objectif de précision en régime permanent,
+												avant d’être <strong>ajusté et validé en boucle fermée</strong>.
+												Une <strong>analyse de sensibilité</strong> m’a permis d’identifier les paramètres
+												les plus influents sur la stabilité et la performance du système.
 											</p>
+
+											<p style="margin:0.8em 0 0.6em 0;"><strong>Régulation de la vitesse d’un servomoteur à courant continu RS640E</strong></p><br>
+											<section class="schema-moteur">
+	<div class="schema-container">
+
+		<!-- Servo moteur réel (grand) -->
+		<div class="moteur-reel">
+			<img src="images/servo.png" alt="Servomoteur à courant continu">
+		</div>
+
+		<!-- Simulation (petite, au milieu) -->
+		<div class="moteur-simu">
+			<img src="images/simu.jpg" alt="Schéma de simulation Simulink">
+		</div>
+
+		<!-- Plaque signalétique (moyenne) -->
+		<div class="moteur-plaque">
+			<img src="images/plaque.jpg" alt="Plaque signalétique du moteur">
+		</div>
+
+	</div>
+</section>
+
+											<p>
+												Ce projet repose sur le <strong>paramétrage et la modélisation du moteur</strong>
+												à partir de données constructeur, suivis d’une <strong>analyse dynamique en boucle ouverte</strong>
+												à vide puis en charge.
+												Sur cette base, j’ai <strong>conçu et réglé un correcteur PI</strong> afin de répondre
+												à des critères de performance (rapidité, stabilité, absence d’erreur statique).
+												Différents réglages ont été comparés afin d’étudier le
+												<strong>compromis entre rapidité et robustesse</strong>, et de valider un comportement
+												cohérent avec les contraintes réelles du système.
+											</p>
+									
+</section>
 										</article>
+
 										<article>
 											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 											<h3>Robot mobile autonome – Arduino</h3>
@@ -171,61 +238,56 @@ de 4  à 6 mois, je cherche à intégrer une équipe qui me permettra d'affiner
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Accueil</a></li>
-										<li><a href="#projects">Projets</a></li>
-										<li><a href="#">Compétences</a></li>
-										<li><a href="#">Contact</a></li>
-									</ul>
-								</nav>
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Accueil</a></li>
+									<li><a href="#projects">Projets</a></li>
+									<li><a href="#">Compétences</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Contact</h2>
-									</header>
-									<ul class="contact">
-										<li class="icon solid fa-envelope">
-											<a href="mailto:celinakhennache2022@gmail.com">celinakhennache2022@gmail.com</a>
-										</li>
-										<li class="icon solid fa-phone">06 22 93 03 20</li>
-										<li class="icon solid fa-home">
-										Clermont-Ferrand, France
-										</li>
-									</ul>
-								</section>
+							<section>
+								<header class="major">
+									<h2>Contact</h2>
+								</header>
+								<ul class="contact">
+									<li class="icon solid fa-envelope">
+										<a href="mailto:celinakhennache2022@gmail.com">celinakhennache2022@gmail.com</a>
+									</li>
+									<li class="icon solid fa-phone">06 22 93 03 20</li>
+									<li class="icon solid fa-home">
+									Clermont-Ferrand, France
+									</li>
+								</ul>
+							</section>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">
-									&copy; KHENNACHE Celina-Fathma. Portfolio académique.
-									Design: <a href="https://html5up.net">HTML5 UP</a>.
-									</p>
-								</footer>
+							<footer id="footer">
+								<p class="copyright">
+								&copy; KHENNACHE Celina-Fathma. Portfolio académique.
+								Design: <a href="https://html5up.net">HTML5 UP</a>.
+								</p>
+							</footer>
 
 						</div>
 					</div>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

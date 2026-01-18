@@ -2271,3 +2271,115 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+    .schema-cuve {
+	margin: 2em 0;
+}
+
+.schema-cuve {
+	margin: 2em 0;
+}
+
+.schema-container {
+	display: flex;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.schema-cuve {
+	margin: 2em 0;
+}
+
+.schema-container {
+	display: flex;
+	gap: 1.5em;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Conteneur : UNE SEULE LIGNE */
+.schema-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5em;
+	flex-wrap: nowrap;   /* <-- clé : interdit le retour à la ligne */
+}
+
+/* Conteneur : une seule ligne */
+.schema-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5em;
+	flex-wrap: nowrap;
+}
+
+/* Images */
+.schema-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Cuve réelle : légèrement réduite */
+.cuve-reelle {
+	order: 1;
+	flex: 0 0 180px;   
+	max-width: 180px;
+}
+
+/* Simulink : la plus petite, au milieu */
+.simulink {
+	order: 2;
+	flex: 0 0 120px;
+	max-width: 120px;
+}
+
+/* Schéma de la cuve : AGRANDI */
+.cuve-schema {
+	order: 3;
+	flex: 0 0 240px;   
+	max-width: 240px;
+}
+
+/* ===== Régulation moteur ===== */
+
+.schema-moteur {
+	margin: 2em 0;
+}
+
+.schema-moteur .schema-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5em;
+	flex-wrap: nowrap;
+}
+
+.schema-moteur img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Servo réel : le plus grand */
+.moteur-reel {
+	order: 1;
+	flex: 0 0 220px;
+	max-width: 220px;
+}
+
+/* Simulation : la plus petite, au milieu */
+.moteur-simu {
+	order: 2;
+	flex: 0 0 120px;
+	max-width: 120px;
+}
+
+/* Plaque signalétique : taille intermédiaire */
+.moteur-plaque {
+	order: 3;
+	flex: 0 0 180px;
+	max-width: 180px;
+}
