@@ -1,8 +1,10 @@
+<!-- =========================
+     FICHIER : index.html
+========================= -->
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
@@ -10,278 +12,231 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			/* ===== PROJETS : tailles identiques (INCHANGÉ) ===== */
+			.posts article .image { display: block; overflow: hidden; border-radius: 0.35rem; }
+			.posts article .image img {
+				width: 100%;
+				height: 230px;
+				object-fit: cover;
+				display: block;
+			}
+			.posts article h3 { margin-top: 1rem; }
+
+			/* ===== BANNIÈRE (PHOTO + TITRE DU DÉBUT) ===== */
+
+			/* Titre plus petit */
+			#banner h1 {
+				font-size: 2.1rem;
+				line-height: 1.2;
+			}
+
+			/* Texte sous le titre */
+			#banner p {
+				font-size: 1rem;
+			}
+
+			/* Photo plus petite */
+			#banner .image {
+				width: 30%;
+			}
+
+			/* Zone texte alignée avec la photo */
+			#banner .content {
+				width: 70%;
+			}
+
+			/* Image sans déformation */
+			#banner .image img {
+				width: 100%;
+				height: auto;
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+			<div id="main">
+				<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>KHENNACHE</strong> Celina-Fathma</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</header>
+					<header id="header">
+						<a href="index.html" class="logo"><strong>KHENNACHE</strong> Celina-Fathma</a>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</header>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>KHENNACHE Celina-Fathma<br />
-											<br>Ingénieure en formation en Automatique & Robotique</h1> <br>
-											<p>Portfolio académique et projets techniques</p>
-										</header>
-										<p>
-										Passionnée par l’ingénierie, guidée par une curiosité technique et une volonté
-										constante d’innover,je suis actuellement à la recherche d’un stage d’une durée
-de 4 à 6 mois. Je souhaite intégrer une équipe qui me permettra d'affiner
-										mon expertise et de développer des solutions technologiques évoluées dans un
-										environnement dynamique.
-										<br /><br />
-										À travers ce site, je présente l’ensemble de mes projets académiques réalisés
-										en automatique, robotique, électronique, systèmes embarqués et développement logiciel.
-										</p>
-										<ul class="actions">
-											<li><a href="#projects" class="button big">Voir mes projets</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/image1.jpg" alt="" />
-									</span>
-								</section>
+					<!-- ===== BANNIÈRE ===== -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1>KHENNACHE Celina-Fathma<br />
+								<br>Ingénieure en formation en Automatique & Robotique</h1>
+								<p>Portfolio académique et projets techniques</p>
+							</header>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Compétences techniques</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Programmation & Robotique</h3>
-												<p>
-												C, C++, Python, MATLAB/Simulink, ROS2, Arduino.
-												Programmation de robots mobiles, lois de commande
-												et planification de trajectoires.
-												</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Électronique & FPGA</h3>
-												<p>
-												Conception et simulation électronique (LTspice, Proteus, PSIM),
-												VHDL et développement sous Quartus.
-												</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Systèmes embarqués</h3>
-												<p>
-												LabVIEW, Arduino, SPICE.
-												Conception de cartes électroniques,
-												tests et validation.
-												</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Outils & Méthodes</h3>
-												<p>
-												Optimisation de systèmes, traitement du signal,
-												initiation aux réseaux de neurones et travail en mode projet.
-												</p>
-											</div>
-										</article>
-									</div>
-								</section>
+							<p>
+								Passionnée par l’ingénierie, guidée par une curiosité technique et une volonté
+								constante d’innover, je suis actuellement à la recherche d’un stage de 4 à 6 mois.
+								Je souhaite intégrer une équipe qui me permettra d'affiner mon expertise et de
+								développer des solutions technologiques évoluées dans un environnement dynamique.
+								<br /><br />
+								À travers ce site, je présente l’ensemble de mes projets académiques réalisés
+								en automatique, robotique, électronique, systèmes embarqués et développement logiciel.
+							</p>
 
-							<!-- Section -->
-								<section id="projects">
-									<header class="major">
-										<h2>Projets académiques</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Asservissement et régulation sous MATLAB/Simulink</h3>
-													<section class="schema-cuve">
-	<section class="schema-cuve">
-	<section class="schema-cuve">
-		<p style="margin:0 0 0.6em 0;"><strong>Régulation du niveau d’eau d’une cuve</strong></p><br>
-	<div class="schema-container">
+							<ul class="actions">
+								<li><a href="#projects" class="button big">Voir mes projets</a></li>
+							</ul>
+						</div>
 
-		<div class="cuve-reelle">
-			<img src="images/Réservoir industriel en acier inoxydable.png" alt="Cuve industrielle réelle">
-		</div>
+						<span class="image object">
+							<img src="images/image1.jpg" alt="" />
+						</span>
+					</section>
 
-		<div class="cuve-schema">
-			<img src="images/cuve.jpg" alt="Schéma de principe de la cuve">
-		</div>
+					<!-- ===== COMPÉTENCES ===== -->
+					<section id="skills">
+						<header class="major"><h2>Compétences techniques</h2></header>
+						<div class="features">
+							<article>
+								<span class="icon fa-gem"></span>
+								<div class="content">
+									<h3>Programmation & Robotique</h3>
+									<p>C, C++, Python, MATLAB/Simulink, ROS2, Arduino.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-paper-plane"></span>
+								<div class="content">
+									<h3>Électronique & FPGA</h3>
+									<p>LTspice, Proteus, PSIM, VHDL, Quartus.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-rocket"></span>
+								<div class="content">
+									<h3>Systèmes embarqués</h3>
+									<p>LabVIEW, Arduino, SPICE.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-signal"></span>
+								<div class="content">
+									<h3>Outils & Méthodes</h3>
+									<p>Optimisation, traitement du signal, mode projet.</p>
+								</div>
+							</article>
+						</div>
+					</section>
 
-		<div class="simulink">
-			<img src="images/schema.jpg" alt="Schéma de régulation Simulink">
-		</div>
+					<!-- ===== PROJETS ===== -->
+					<section id="projects">
+						<header class="major"><h2>Projets académiques</h2></header>
+						<div class="posts">
 
-	</div>
-</section>
+							<!-- MATLAB -->
+							<article>
+								<a href="generic.html#matlab" class="image">
+									<img src="images/schema.jpg" alt="MATLAB Simulink" />
+								</a>
+								<h3>Asservissement et régulation – MATLAB/Simulink</h3>
+								<ul class="actions">
+									<li><a href="generic.html#matlab" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
-</section>
+							<!-- Arduino -->
+							<article>
+								<a href="generic.html#arduino" class="image">
+									<img src="images/robot.png" alt="Arduino" />
+								</a>
+								<h3>Robot mobile autonome – Arduino</h3>
+								<ul class="actions">
+									<li><a href="generic.html#arduino" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
+							<!-- ROS2 LIMO -->
+							<article>
+								<a href="generic.html#ros2" class="image">
+									<img src="images/pic03.jpg" alt="Robot LIMO ROS2" />
+								</a>
+								<h3>Robot LIMO – ROS2 & Gazebo</h3>
+								<ul class="actions">
+									<li><a href="generic.html#ros2" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
-											
-											<p>
-												Dans ce travail, j’ai suivi une démarche structurée en automatique :
-												<strong>modélisation du procédé</strong> à partir des lois physiques,
-												<strong>validation du comportement sous Simulink</strong> en boucle ouverte,
-												puis <strong>mise en place d’une loi de commande proportionnelle</strong>.
-												Le réglage a été effectué à partir d’un objectif de précision en régime permanent,
-												avant d’être <strong>ajusté et validé en boucle fermée</strong>.
-												Une <strong>analyse de sensibilité</strong> m’a permis d’identifier les paramètres
-												les plus influents sur la stabilité et la performance du système.
-											</p>
+							<!-- FPGA -->
+							<article>
+								<a href="generic.html#fpga" class="image">
+									<img src="images/pic04.jpg" alt="Projet FPGA Chronomètre" />
+								</a>
+								<h3>FPGA – Chronomètre (VHDL / Quartus)</h3>
+								<ul class="actions">
+									<li><a href="generic.html#fpga" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
-											<p style="margin:0.8em 0 0.6em 0;"><strong>Régulation de la vitesse d’un servomoteur à courant continu RS640E</strong></p><br>
-											<section class="schema-moteur">
-	<div class="schema-container">
+							<!-- LabVIEW -->
+							<article>
+								<a href="generic.html#labview" class="image">
+									<img src="images/pic05.jpg" alt="Application LabVIEW" />
+								</a>
+								<h3>LabVIEW – Application de sélection de café</h3>
+								<ul class="actions">
+									<li><a href="generic.html#labview" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
-		<!-- Servo moteur réel (grand) -->
-		<div class="moteur-reel">
-			<img src="images/servo.png" alt="Servomoteur à courant continu">
-		</div>
+							<!-- Carte électronique -->
+							<article>
+								<a href="generic.html#elec" class="image">
+									<img src="images/pic06.jpg" alt="Conception carte électronique" />
+								</a>
+								<h3>Électronique – Conception de carte (PCB)</h3>
+								<ul class="actions">
+									<li><a href="generic.html#elec" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
-		<!-- Simulation (petite, au milieu) -->
-		<div class="moteur-simu">
-			<img src="images/simu.jpg" alt="Schéma de simulation Simulink">
-		</div>
-
-		<!-- Plaque signalétique (moyenne) -->
-		<div class="moteur-plaque">
-			<img src="images/plaque.jpg" alt="Plaque signalétique du moteur">
-		</div>
-
-	</div>
-</section>
-
-											<p>
-												Ce projet repose sur le <strong>paramétrage et la modélisation du moteur</strong>
-												à partir de données constructeur, suivis d’une <strong>analyse dynamique en boucle ouverte</strong>
-												à vide puis en charge.
-												Sur cette base, j’ai <strong>conçu et réglé un correcteur PI</strong> afin de répondre
-												à des critères de performance (rapidité, stabilité, absence d’erreur statique).
-												Différents réglages ont été comparés afin d’étudier le
-												<strong>compromis entre rapidité et robustesse</strong>, et de valider un comportement
-												cohérent avec les contraintes réelles du système.
-											</p>
-									
-</section>
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Robot mobile autonome – Arduino</h3>
-											<p>
-											Programmation du déplacement autonome
-											et implémentation d’un correcteur PI.
-											</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Robot LIMO sous ROS2</h3>
-											<p>
-											Déplacement autonome, asservissement en vitesse
-											et intégration de ROS2.
-											</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Projet FPGA – Chronomètre</h3>
-											<p>
-											Développement et simulation d’un chronomètre
-											en VHDL sous Quartus.
-											</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Application LabVIEW</h3>
-											<p>
-											Conception d’une interface utilisateur intuitive
-											pour la visualisation et le pilotage de données.
-											</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Conception de carte électronique</h3>
-											<p>
-											Réalisation du schéma, fabrication,
-											tests et validation d’une carte électronique.
-											</p>
-										</article>
-									</div>
-								</section>
+							<!-- Traitement d’images -->
+							<article>
+								<a href="generic.html#image" class="image">
+									<img src="images/pic02.jpg" alt="Traitement d’images Python" />
+								</a>
+								<h3>Traitement d’images – Contrôle qualité (Python / OpenCV)</h3>
+								<ul class="actions">
+									<li><a href="generic.html#image" class="button">Learn more</a></li>
+								</ul>
+							</article>
 
 						</div>
-					</div>
+					</section>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<section id="search" class="alt">
-								<form method="post" action="#">
-									<input type="text" name="query" id="query" placeholder="Search" />
-								</form>
-							</section>
-
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="index.html">Accueil</a></li>
-									<li><a href="#projects">Projets</a></li>
-									<li><a href="#">Compétences</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</nav>
-
-							<section>
-								<header class="major">
-									<h2>Contact</h2>
-								</header>
-								<ul class="contact">
-									<li class="icon solid fa-envelope">
-										<a href="mailto:celinakhennache2022@gmail.com">celinakhennache2022@gmail.com</a>
-									</li>
-									<li class="icon solid fa-phone">06 22 93 03 20</li>
-									<li class="icon solid fa-home">
-									Clermont-Ferrand, France
-									</li>
-								</ul>
-							</section>
-
-							<footer id="footer">
-								<p class="copyright">
-								&copy; KHENNACHE Celina-Fathma. Portfolio académique.
-								Design: <a href="https://html5up.net">HTML5 UP</a>.
-								</p>
-							</footer>
-
-						</div>
-					</div>
-
+				</div>
 			</div>
+
+			<div id="sidebar">
+				<div class="inner">
+					<nav id="menu">
+						<header class="major"><h2>Menu</h2></header>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="#projects">Projets</a></li>
+							<li><a href="#skills">Compétences</a></li>
+							<li><a href="elements.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
 
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>

@@ -2383,3 +2383,63 @@ button,
 	flex: 0 0 180px;
 	max-width: 180px;
 }
+/* ===== Robot Arduino : une seule ligne, robot collé à la trajectoire ===== */
+.schema-robot-arduino {
+	margin: 1.8em 0;
+}
+
+.schema-robot-arduino .schema-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 0;              /* AUCUN espace global */
+	flex-wrap: nowrap;  /* une seule ligne */
+}
+
+/* Ordre forcé */
+.robot-arduino-robot { order: 1; }
+.robot-arduino-tra   { order: 2; }
+.robot-arduino-code  { order: 3; }
+
+/* Styles communs (sans arrondis) */
+.schema-robot-arduino img {
+	border-radius: 0;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+	display: block;
+	height: auto;
+}
+
+/* Robot : grand */
+.robot-arduino-robot img {
+	width: 240px;
+}
+
+/* Trajectoire : petit, COLLÉ au robot */
+.robot-arduino-tra {
+	margin-left: 0;   /* aucun espace */
+}
+.robot-arduino-tra img {
+	width: 160px;
+}
+
+/* Code : petit, avec espace volontaire */
+.robot-arduino-code {
+	margin-left: 1.4em;  /* espace UNIQUEMENT avant le code */
+}
+.robot-arduino-code img {
+	width: 170px;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+	.schema-robot-arduino .schema-container {
+		flex-wrap: wrap;
+	}
+
+	.robot-arduino-code {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+}
+
